@@ -1,0 +1,46 @@
+---
+title: MDX Component Test
+description: Tests MDX-specific parsing
+---
+
+import { Tabs } from '@components/tabs'
+import CodeBlock from '../components/CodeBlock'
+
+# MDX Features
+
+This page tests MDX-specific features.
+
+## Using Components
+
+<Tabs>
+
+Here is text inside a component.
+
+The component wraps useful content.
+
+</Tabs>
+
+export const metadata = { version: "2.0" }
+
+## Code Examples
+
+Here's how to use the API:
+
+```python
+# This heading inside code should NOT be treated as a heading
+# ## Not a heading
+def my_function():
+    return "hello"
+```
+
+Note the function returns a string.
+
+### Nested Heading
+
+More content under a nested heading with a code block:
+
+```javascript
+// Another code block
+const x = 42;
+console.log(x);
+```
