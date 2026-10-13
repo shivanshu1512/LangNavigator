@@ -3,9 +3,9 @@
 > **A retrieval-augmented Q&A assistant for LangGraph documentation.**
 > Answers developer questions with citations to exact doc sections, refuses when the docs don't contain the answer, and includes an evaluation suite that measures every design choice.
 
-<!-- TODO: Add demo GIF and live link here after deployment -->
-<!-- ![Demo](demo.gif) -->
-<!-- 🔗 **[Try the live demo →](https://your-app.streamlit.app)** -->
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://langnavigator-hhbqht7bfedr2tk4cant6t.streamlit.app/)
+
+🔗 **Live Demo:** [LangNavigator — LangGraph Assistant on Streamlit](https://langnavigator-hhbqht7bfedr2tk4cant6t.streamlit.app/)
 
 ---
 
@@ -162,6 +162,7 @@ uv run python -m eval.run --config configs/ablations/c_hybrid_rerank.yaml --spli
 ### UI on Streamlit Community Cloud
 1. Point to `ui/streamlit_app.py`
 2. Set secret: `API_URL = "https://your-service.onrender.com"`
+3. **Live App:** [langnavigator-hhbqht7bfedr2tk4cant6t.streamlit.app](https://langnavigator-hhbqht7bfedr2tk4cant6t.streamlit.app/)
 
 > **Note:** Free-tier Render sleeps after ~15 min. Cold starts take 30-60s.
 > The UI shows a spinner while waiting.
